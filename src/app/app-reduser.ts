@@ -28,7 +28,7 @@ type InitialStateStateType = {
   isOpenBurger: boolean
   isOpenForm: boolean
 }
-export const selectOpenBurger = (state) => state.isOpenBurger
+export const selectOpenBurger = (state: any) => state.isOpenBurger
 export type RequestStatusType = "idle" | "loading" | "error"
 export const appReducer = slice.reducer
 export const { setIsOpenBurgerAC, setIsOpenFormAC, setIsMenuOpenAC } =

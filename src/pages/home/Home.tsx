@@ -1,6 +1,7 @@
 import React from "react"
 import {
-  AboutJetOptic, Content,
+  AboutJetOptic,
+  Content,
   HomeContent,
   HomeWrapper,
   ImgWrap,
@@ -8,13 +9,11 @@ import {
   Title,
 } from "./style"
 import { Container } from "../../common/style/global"
-import { BackgroundImage } from "../../common/componemts/background-image/BackgroundImage"
 import HomeBg from "./assets/jet-bg.png"
 
 export const Home = () => {
   return (
     <HomeWrapper>
-      {/*<BackgroundImage imageUrl={HomeBg}>*/}
       <AboutJetOptic>
         <Container>
           <Content>
@@ -28,8 +27,6 @@ export const Home = () => {
           <img src={HomeBg} alt="HomeBg" />
         </ImgWrap>
       </AboutJetOptic>
-
-      {/*</BackgroundImage>*/}
       <div>asfasf</div>
     </HomeWrapper>
   )
