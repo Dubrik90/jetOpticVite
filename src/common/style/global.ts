@@ -31,8 +31,9 @@ export default createGlobalStyle`
     // --color-menu-hover: #79E35E;
     //--color-dg-footer: #3D5F47;
     --bg-header: rgba(100, 100, 100, 0.5);
-    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --bg-dark: #252525;
 
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --bg-footer: rgba(255, 255, 255, 0.23);
 
   }

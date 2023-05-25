@@ -1,8 +1,10 @@
 import React from "react"
 import { LogoWrapper } from "./style"
 import { ROUTS } from "../../constans/routs"
+import {Link} from "react-router-dom";
 
 export const Logo = () => {
+
   const onClickUpHandler = () => {
     window.scrollTo({
       top: 0,
@@ -12,8 +14,10 @@ export const Logo = () => {
   }
 
   return (
-    <LogoWrapper src={ROUTS.HOME} onClick={onClickUpHandler}>
-      Техника <span>Красоты</span>
+    <LogoWrapper onClick={onClickUpHandler}>
+      <Link to={ROUTS.HOME}>
+        Техника <span>Красоты</span>
+      </Link>
     </LogoWrapper>
   )
 }

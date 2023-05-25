@@ -1,11 +1,15 @@
-import React from 'react';
-import {FooterWrapper} from "./style";
+import React from "react"
+import { FooterContent, FooterWrapper } from "./style"
+import { Container } from "../../style/global"
 
 export const Footer = () => {
-    return (
-        <FooterWrapper>
-            Footer
-        </FooterWrapper>
-    );
-};
-
+  return (
+    <FooterWrapper>
+      <Container>
+        <FooterContent>
+            Footers
+        </FooterContent>
+      </Container>
+    </FooterWrapper>
+  )
+}

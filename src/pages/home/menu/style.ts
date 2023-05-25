@@ -21,9 +21,12 @@ export const PhoneLink = styled.a`
   }
   @media (max-width: 768px) {
     font-size: var(--fs-16);
+    margin-right: 0;
+    order: 5;
+    column-gap: 10px;
   }
 `
-export const MenuLink = styled.ul`
+export const MenuLinks = styled.ul<{ isOpenBurger: boolean }>`
   display: flex;
   align-items: center;
   column-gap: 60px;
@@ -38,6 +41,37 @@ export const MenuLink = styled.ul`
     }
     @media (max-width: 768px) {
       font-size: var(--fs-16);
+    }
+    @media (max-width: 767px) {
+      color: var(--color-withe);
+    }
+  }
+
+  @media (max-width: 767px) {
+    left: ${({ isOpenBurger }) => (isOpenBurger ? "0" : "-100%")};
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+    overflow: auto;
+    height: 220px;
+    position: fixed;
+    top: 0;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    background-color: var(--bg-dark);
+    width: 100%;
+    transition: left 0.3s;
+
+    :after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      //height: 80px;
+     // background-color: aquamarine;
+      z-index: 10;
     }
   }
 `
