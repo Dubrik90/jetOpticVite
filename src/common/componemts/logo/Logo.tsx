@@ -2,16 +2,16 @@ import React from "react"
 import { LogoWrapper } from "./style"
 import { ROUTS } from "../../constans/routs"
 import {Link} from "react-router-dom";
-
+export const onClickUpHandler = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  })
+}
 export const Logo = () => {
 
-  const onClickUpHandler = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    })
-  }
+
 
   return (
     <LogoWrapper onClick={onClickUpHandler}>

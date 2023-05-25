@@ -23,6 +23,7 @@ export default createGlobalStyle`
 
     /*Colors*/
     --color-dark: #000;
+    --color-sub-title: #dadada;
     --color-withe: #fff;
     --color-ogange: #DF7E0C;
     --color-ogange-border: #E4A135;
@@ -34,7 +35,8 @@ export default createGlobalStyle`
     --bg-dark: #252525;
 
     --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    --bg-footer: rgba(255, 255, 255, 0.23);
+    --bg-footer: rgba(100, 100, 100, 0.77);
+    --bg-main: #252525;
 
   }
 
@@ -46,6 +48,7 @@ export default createGlobalStyle`
     background-color: var(--colors-bg);
     font-size: var(--fs-36);
     transition: all 0.3s;
+    color: var(--color-withe);
   }
 
   #root {
