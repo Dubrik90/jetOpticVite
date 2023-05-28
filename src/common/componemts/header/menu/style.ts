@@ -19,7 +19,7 @@ export const PhoneLink = styled.a`
       width: calc(18px + (40 - 18) * ((100vw - 768px) / (1920 - 768)));
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: var(--fs-16);
     margin-right: 0;
     order: 5;

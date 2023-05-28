@@ -1,7 +1,6 @@
 import React from "react"
 import {
   CharacteristicContent,
-  ImgWrap,
   CharacteristicTitle,
   JetCharacteristicWrapper,
   Card,
@@ -80,63 +79,6 @@ export const JetCharacteristic = () => {
             </CardContent>
           </Card>
         </Row3>
-
-        {/*<div className="parent">*/}
-        {/*  <div className="div1">*/}
-        {/*    <Card>*/}
-        {/*      <SvgComponent src={Length} width={"100px"} height={"80px"} />*/}
-        {/*      <CardContent>*/}
-        {/*        <CardTitle>808 нм</CardTitle>*/}
-        {/*        <CardText>Длина волны</CardText>*/}
-        {/*      </CardContent>*/}
-        {/*    </Card>*/}
-        {/*  </div>*/}
-        {/*  <div className="div2">*/}
-        {/*    <Card>*/}
-        {/*      <SvgComponent src={Power} width={"100px"} height={"80px"} />*/}
-        {/*      <CardContent>*/}
-        {/*        <CardTitle> от 600 Вт <br/> до 1200 Вт</CardTitle>*/}
-        {/*        <CardText>Мощность излучателя</CardText>*/}
-        {/*      </CardContent>*/}
-        {/*    </Card>*/}
-        {/*  </div>*/}
-        {/*  <div className="div3">*/}
-        {/*    <Card>*/}
-        {/*      <SvgComponent src={Width} width={"100px"} height={"80px"} />*/}
-        {/*      <CardContent>*/}
-        {/*        <CardTitle>13×13 мм</CardTitle>*/}
-        {/*        <CardText>Размер рабочего пятна</CardText>*/}
-        {/*      </CardContent>*/}
-        {/*    </Card>*/}
-        {/*  </div>*/}
-        {/*  <div className="div4">*/}
-        {/*    <Card>*/}
-        {/*      <SvgComponent src={Energy} width={"100px"} height={"80px"} />*/}
-        {/*      <CardContent>*/}
-        {/*        <CardTitle>5–400 мс</CardTitle>*/}
-        {/*        <CardText>Энергия импульса</CardText>*/}
-        {/*      </CardContent>*/}
-        {/*    </Card>*/}
-        {/*  </div>*/}
-        {/*  <div className="div5">*/}
-        {/*    <Card>*/}
-        {/*      <SvgComponent src={Speed} width={"100px"} height={"80px"} />*/}
-        {/*      <CardContent>*/}
-        {/*        <CardTitle>1–10 Гц</CardTitle>*/}
-        {/*        <CardText>Скорость вспышек</CardText>*/}
-        {/*      </CardContent>*/}
-        {/*    </Card>*/}
-        {/*  </div>*/}
-        {/*  <div className="div6">*/}
-        {/*    <Card>*/}
-        {/*      <SvgComponent src={Length} width={"100px"} height={"80px"} />*/}
-        {/*      <CardContent>*/}
-        {/*        <CardTitle>808 нм</CardTitle>*/}
-        {/*        <CardText>Длина волны</CardText>*/}
-        {/*      </CardContent>*/}
-        {/*    </Card>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
       </CharacteristicContent>
     </JetCharacteristicWrapper>
   )

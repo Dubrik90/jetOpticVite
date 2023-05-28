@@ -14,14 +14,28 @@ export const CharacteristicContent = styled.div<{ src: string }>`
   align-items: center;
   margin-bottom: 50px;
   row-gap: 40px;
+  position: relative;
   @media (max-width: 1920px) {
     row-gap: calc(5px + (40 - 5) * ((100vw - 390px) / (1920 - 390)));
     height: calc(300px + (1091 - 300) * ((100vw - 390px) / (1920 - 390)));
   }
-  
+  :before {
+    content: '';
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+    z-index: 10;
+    background: rgba(248, 137, 8, 0.7);
+    filter: blur(250px);
+    @media (max-width: 1024px) {
+      top: 0;
+    }
+  }
 `
-export const CharacteristicTitle = styled(TitleGL)`
-`
+export const CharacteristicTitle = styled(TitleGL)``
 
 export const Card = styled.div`
   display: flex;
@@ -45,6 +59,7 @@ export const Card = styled.div`
   &.bottom {
     position: relative;
     bottom: -20px;
+    z-index: 1;
     @media (max-width: 1920px) {
       bottom: calc(-5px + (-20 - -5) * ((100vw - 390px) / (1920 - 390)));
     }
@@ -128,7 +143,6 @@ export const Row2 = styled.div`
   @media (max-width: 1920px) {
     max-width: calc(325px + (1430 - 325) * ((100vw - 390px) / (1920 - 390)));
   }
- 
 `
 export const Row3 = styled.div`
   display: flex;
