@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled, {createGlobalStyle} from "styled-components"
 
 import "./null.css"
 import "../../assets/fonts/fonts.css"
@@ -12,6 +12,7 @@ export default createGlobalStyle`
     // --fs-12: 12px;
     //  --fs-14: 14px;
     --fs-16: 16px;
+    --fs-18: 18px;
     --fs-36: 36px;
     --fs-48: 48px;
     --fs-96: 96px;
@@ -58,9 +59,9 @@ export default createGlobalStyle`
   }
 `
 export const Container = styled.div.attrs({
-  className: "container",
+    className: "container",
 })`
-  max-width: 1625px;
+  max-width: 1650px;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 40px;
@@ -68,5 +69,24 @@ export const Container = styled.div.attrs({
 
   @media (max-width: 768px) {
     padding: 0 15px;
+  }
+`
+export const TitleGL = styled.h2`
+  font-family: "Dewberry";
+  font-weight: var(--fw-semiBold);
+  font-size: var(--fs-96);
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: var(--color-withe);
+  @media (max-width: 1920px) {
+    font-size: calc(20px + (96 - 20) * ((100vw - 390px) / (1920 - 390)));
+  }
+`
+export const TextGL = styled.p`
+  font-size: var(--fs-36);
+  line-height: 1.12;
+  color: var(--color-withe);
+  @media (max-width: 1920px) {
+    font-size: calc(14px + (36 - 14) * ((100vw - 390px) / (1920 - 390)));
   }
 `

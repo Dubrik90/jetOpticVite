@@ -1,17 +1,17 @@
 import React from "react"
 import { MenuLinks, MenuWrapper, PhoneLink } from "./style"
-import { SvgComponent } from "../../../common/componemts/svg-component/SvgComponent"
+import { SvgComponent } from "../../svg-component/SvgComponent"
 
 import PhoneIc from "./assets/phone-icon.svg"
-import { MenuLinksType } from "../../../common/types/type"
+import { MenuLinksType } from "../../../types/type"
 import { Link } from "react-router-dom"
-import { ROUTS } from "../../../common/constans/routs"
+import { ROUTS } from "../../../constans/routs"
 
-import { Burger } from "../../../common/style/Burger"
-import { useScrollBlock } from "../../../common/hooks/use-scroll-block"
-import { useAppDispatch } from "../../../common/hooks/UseDispatch"
-import { selectOpenBurger, setIsOpenBurgerAC } from "../../../app/app-reduser"
-import { useAppSelector } from "../../../common/hooks/UseSelector"
+import { Burger } from "../../../style/Burger"
+import { useScrollBlock } from "../../../hooks/use-scroll-block"
+import { useAppDispatch } from "../../../hooks/UseDispatch"
+import { selectOpenBurger, setIsOpenBurgerAC } from "../../../../app/app-reduser"
+import { useAppSelector } from "../../../hooks/UseSelector"
 
 export const Menu = () => {
   const dispatch = useAppDispatch()
