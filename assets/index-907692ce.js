@@ -278,6 +278,9 @@ Error generating stack: `+i.message+`
     @media (max-width: 767px) {
       color: var(--color-withe);
     }
+    :hover {
+      color: var(--color-ogange);
+    }
   }
 
   @media (max-width: 767px) {
@@ -302,8 +305,6 @@ Error generating stack: `+i.message+`
       top: 0;
       left: 0;
       width: 100%;
-      //height: 80px;
-     // background-color: aquamarine;
       z-index: 10;
     }
   }
@@ -798,4 +799,4 @@ Error generating stack: `+i.message+`
     max-width: calc(235px + (1062 - 235) * ((100vw - 390px) / (1920 - 390)));
   }
 `,Mw=""+new URL("characteristic-14fcb879.png",import.meta.url).href,Dw=""+new URL("lenght-216a7325.svg",import.meta.url).href,Uw=""+new URL("energy-20c5015d.svg",import.meta.url).href,Fw=""+new URL("power-0dcafd9c.svg",import.meta.url).href,Bw=""+new URL("resource-de850e6d.svg",import.meta.url).href,_w=""+new URL("speed-c6f3b6c7.svg",import.meta.url).href,Ww=""+new URL("width-657acad8.svg",import.meta.url).href,bw=()=>w.jsxs(Rw,{children:[w.jsx(zn,{children:w.jsx(Tw,{children:"Технические характеристики"})}),w.jsxs(Nw,{src:Mw,children:[w.jsxs(zw,{children:[w.jsxs(Mn,{children:[w.jsx(gn,{src:Dw,width:"100px",height:"80px"}),w.jsxs(Dn,{children:[w.jsx(Un,{children:"808 нм"}),w.jsx(Fn,{children:"Длина волны"})]})]}),w.jsxs(Mn,{className:"bottom",children:[w.jsx(gn,{src:Bw,width:"100px",height:"80px"}),w.jsxs(Dn,{children:[w.jsx(Un,{children:"30 млн импульсов"}),w.jsx(Fn,{children:"Ресурс излучателя"})]})]})]}),w.jsxs(Iw,{children:[w.jsxs(Mn,{children:[w.jsx(gn,{src:Fw,width:"100px",height:"80px"}),w.jsxs(Dn,{children:[w.jsxs(Un,{children:[" ","от 600 Вт ",w.jsx("br",{})," до 1200 Вт"]}),w.jsx(Fn,{children:"Мощность излучателя"})]})]}),w.jsxs(Mn,{className:"bottom",children:[w.jsx(gn,{src:_w,width:"100px",height:"80px"}),w.jsxs(Dn,{children:[w.jsx(Un,{children:"1–10 Гц"}),w.jsx(Fn,{children:"Скорость вспышек"})]})]})]}),w.jsxs(Lw,{children:[w.jsxs(Mn,{children:[w.jsx(gn,{src:Ww,width:"100px",height:"80px"}),w.jsxs(Dn,{children:[w.jsx(Un,{children:"13×13 мм"}),w.jsx(Fn,{children:"Размер рабочего пятна"})]})]}),w.jsxs(Mn,{children:[w.jsx(gn,{src:Uw,width:"100px",height:"80px"}),w.jsxs(Dn,{children:[w.jsx(Un,{children:"5–400 мс"}),w.jsx(Fn,{children:"Энергия импульса"})]})]})]})]})]}),Hw=()=>w.jsxs(gw,{children:[w.jsx(Ew,{}),w.jsx(Ow,{}),w.jsx(bw,{})]}),Vw=()=>w.jsx("div",{children:"About"}),$w=()=>w.jsx("div",{children:"Contacts"}),Qw=()=>w.jsx("div",{children:"Feedback"}),Xw=()=>w.jsx(jy,{children:w.jsxs(Bn,{path:xt.HOME,element:w.jsx(vw,{}),children:[w.jsx(Bn,{path:xt.HOME,element:w.jsx(Hw,{})}),w.jsx(Bn,{path:xt.ABOUT,element:w.jsx(Vw,{})}),w.jsx(Bn,{path:xt.CONTACTS,element:w.jsx($w,{})}),w.jsx(Bn,{path:xt.FEEDBACK,element:w.jsx(Qw,{})})]})});su.createRoot(document.getElementById("root")).render(w.jsx(w.Fragment,{children:w.jsxs(rg,{store:fh,children:[w.jsx(L1,{}),w.jsx(zy,{children:w.jsx(Xw,{})})]})}));
-//# sourceMappingURL=index-24575525.js.map
+//# sourceMappingURL=index-907692ce.js.map
