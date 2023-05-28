@@ -4,7 +4,8 @@ import { JetHead } from "./jet-head/JetHead"
 import { JetAbout } from "./jet-about/JetAbout"
 import { JetCharacteristic } from "./jet-characteristic/JetCharacteristic"
 import { JetChillerAbout } from "./Jet-chiller-about/JetChillerAbout"
-import {OfficialSupplier} from "./jet-official-supplier/OfficialSupplier";
+import { OfficialSupplier } from "./jet-official-supplier/OfficialSupplier"
+import {JetDelivery} from "./jet-delivery/JetDelivery";
 
 export const Home = () => {
   return (
@@ -13,7 +14,9 @@ export const Home = () => {
       <JetAbout />
       <JetCharacteristic />
       <JetChillerAbout />
-        <OfficialSupplier/>
+      <OfficialSupplier />
+        <JetDelivery />
+
     </HomeWrapper>
   )
 }

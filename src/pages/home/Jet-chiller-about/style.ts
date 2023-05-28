@@ -1,9 +1,7 @@
 import styled from "styled-components"
 import { Card, CardText, CardTitle } from "../jet-characteristic/style"
 
-export const JetChillerAboutWrapper = styled.div<{ src: string }>`
-  
-`
+export const JetChillerAboutWrapper = styled.div``
 export const ChillerHead = styled(Card)`
   flex-direction: column;
   max-width: 754px;
@@ -19,7 +17,7 @@ export const ChillerHead = styled(Card)`
     row-gap: calc(10px + (40 - 10) * ((100vw - 390px) / (1920 - 390)));
   }
   :before {
-    content: '';
+    content: "";
     width: 370px;
     height: 370px;
     position: absolute;
@@ -36,7 +34,8 @@ export const ChillerHead = styled(Card)`
 `
 export const ChillerTitle = styled(CardTitle)``
 export const ChillerText = styled(CardText)``
-export const ChillerContent = styled.div`
+
+export const ChillerContent = styled.div<{ src: string }>`
   background: url(${(props) => props.src});
   background-repeat: no-repeat;
   background-size: contain;
@@ -55,15 +54,15 @@ export const ChillerContent = styled.div`
     height: calc(390px + (1380 - 390) * ((100vw - 390px) / (1920 - 390)));
     margin-top: calc(-50px + (-200 - -50) * ((100vw - 390px) / (1920 - 390)));
   }
- > div:nth-child(1) {
+  > div:nth-child(1) {
     position: relative;
     left: -5%;
-   @media (max-width: 700px) {
-     left: -10%;
-   }
-   @media (max-width: 425px) {
-     left: -20%;
-   }
+    @media (max-width: 700px) {
+      left: -10%;
+    }
+    @media (max-width: 425px) {
+      left: -20%;
+    }
   }
   > div:nth-child(2) {
     position: relative;
@@ -84,7 +83,6 @@ export const ChillerContent = styled.div`
       left: -15%;
     }
   }
-
 `
 export const ChillerCard = styled(Card)`
   align-self: center;

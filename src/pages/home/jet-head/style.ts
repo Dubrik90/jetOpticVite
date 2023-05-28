@@ -3,10 +3,20 @@ import { ImageProps } from "../../../common/types/type"
 
 export const AboutJetOptic = styled.div<ImageProps>`
   position: relative;
-  background: url(${(props) => props.src});
+  background: linear-gradient(
+      90.38deg,
+      rgba(95, 74, 1, 0.4) 0.29%,
+      rgba(217, 217, 217, 0) 98.48%
+    ),
+    url(${(props) => props.src});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
+  //background-color: linear-gradient(
+  //  90.38deg,
+  //  rgba(95, 74, 1, 0.4) 0.29%,
+  //  rgba(217, 217, 217, 0) 98.48%
+  //);
   height: 1090px;
   @media (max-width: 1920px) {
     height: calc(330px + (1090 - 330) * ((100vw - 390px) / (1920 - 390)));
