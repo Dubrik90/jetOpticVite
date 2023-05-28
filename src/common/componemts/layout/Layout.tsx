@@ -11,13 +11,13 @@ export const Layout = () => {
     <>
       {/*<ScrollToTop/>*/}
       <Header />
-      {/*<BarLinks*/}
-      {/*  whatsapp={""}*/}
-      {/*  instagram={"@jetoptic"}*/}
-      {/*  youtube={"- @jetOptic"}*/}
-      {/*  email={"tekhnikakrasoty@mail.ru(e-mail)"}*/}
-      {/*/>*/}
-      {/*<BarBottom />*/}
+      <BarLinks
+        whatsapp={""}
+        instagram={"@jetoptic"}
+        youtube={"- @jetOptic"}
+        email={"tekhnikakrasoty@mail.ru(e-mail)"}
+      />
+      <BarBottom />
       <MainWrapper>
         <Outlet />
       </MainWrapper>
