@@ -45,6 +45,9 @@ export const MenuLinks = styled.ul<{ isOpenBurger: boolean }>`
     @media (max-width: 767px) {
       color: var(--color-withe);
     }
+    :hover {
+      color: var(--color-ogange);
+    }
   }
 
   @media (max-width: 767px) {
@@ -69,8 +72,6 @@ export const MenuLinks = styled.ul<{ isOpenBurger: boolean }>`
       top: 0;
       left: 0;
       width: 100%;
-      //height: 80px;
-     // background-color: aquamarine;
       z-index: 10;
     }
   }
