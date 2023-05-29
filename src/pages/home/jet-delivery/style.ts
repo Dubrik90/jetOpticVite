@@ -7,13 +7,14 @@ export const JetDeliveryWrapper = styled.div`
 export const ImgWrap = styled.div`
   width: 100%;
   @media (max-width: 500px) {
-    height: 215px;
+     height: 215px;
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
   }
 `
 export const Content = styled.div`
@@ -56,7 +57,7 @@ export const DeliveryBlock = styled.div`
   @media (max-width: 500px) {
     position: absolute;
     bottom: 10px;
-    right: 40px;
+    right: 10px;
     max-width: 267px;
   }
 `
