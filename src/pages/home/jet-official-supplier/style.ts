@@ -55,13 +55,13 @@ export const ColumnCard = styled.div`
   max-width: 465px;
   align-items: center;
   @media (max-width: 1920px) {
-    padding: calc(10px + (51 - 10) * ((100vw - 390px) / (1920 - 390)))
+    padding: calc(20px + (51 - 20) * ((100vw - 390px) / (1920 - 390)))
       calc(14px + (69 - 14) * ((100vw - 390px) / (1920 - 390)));
     row-gap: calc(9px + (21 - 9) * ((100vw - 390px) / (1920 - 390)));
     border-radius: calc(10px + (54 - 10) * ((100vw - 390px) / (1920 - 390)));
   }
   @media (max-width: 767px) {
-    max-width: 140px;
+    width: 100%;
   }
 
   svg {
