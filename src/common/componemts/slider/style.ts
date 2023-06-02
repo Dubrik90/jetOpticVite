@@ -3,8 +3,10 @@ import styled from "styled-components"
 export const SwiperWrapper = styled.div`
   .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    @media (max-width: 768px) {
+      padding-bottom: 50px;
+    }
 
     .swiper-slide {
       max-width: 611px !important;
@@ -15,7 +17,7 @@ export const SwiperWrapper = styled.div`
       border-radius: 20px;
       @media (max-width: 1920px) {
         padding: calc(20px + (54 - 20) * ((100vw - 390px) / (1920 - 390)))
-        calc(20px + (31 - 20) * ((100vw - 390px) / (1920 - 390)));
+          calc(20px + (31 - 20) * ((100vw - 390px) / (1920 - 390)));
       }
 
       h3 {
@@ -61,14 +63,13 @@ export const SwiperWrapper = styled.div`
         @media (max-width: 1920px) {
           font-size: calc(12px + (32 - 12) * ((100vw - 390px) / (1920 - 390)));
           column-gap: calc(18px + (25 - 18) * ((100vw - 390px) / (1920 - 390)));
-          
         }
         @media (min-width: 501px) {
           :hover {
             color: var(--color-ogange);
             svg {
               transform: translateX(5px);
-              
+
               path {
                 fill: var(--color-ogange);
               }
@@ -100,6 +101,32 @@ export const SwiperWrapper = styled.div`
     .swiper-slide-prev,
     .swiper-slide-next {
       transform: scale(0.8) !important;
+    }
+    .swiper-pagination-bullet {
+      background: rgba(228, 161, 53, 0.7);
+      width: 20px;
+      height: 20px;
+      @media (max-width: 768px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+`
+export const PaginationBlock = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding-bottom: 50px;
+  z-index: 50;
+  position: relative;
+  svg {
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    margin-top: -40px;
+    svg {
+      width: 30px;
     }
   }
 `

@@ -6,8 +6,7 @@ import { JetCharacteristic } from "./jet-characteristic/JetCharacteristic"
 import { JetChillerAbout } from "./Jet-chiller-about/JetChillerAbout"
 import { OfficialSupplier } from "./jet-official-supplier/OfficialSupplier"
 import { JetDelivery } from "./jet-delivery/JetDelivery"
-import {SliderComp} from "../../common/componemts/slider/SliderComp";
-import {JetSliderReviews} from "./jet-slider-reviews/JetSliderReviews";
+import { SliderComp } from "../../common/componemts/slider/SliderComp"
 
 export const Home = () => {
   return (
@@ -18,7 +17,7 @@ export const Home = () => {
       <JetChillerAbout />
       <OfficialSupplier />
       <JetDelivery />
-        {/*<JetSliderReviews/>*/}
+      {/*<JetSliderReviews/>*/}
       <SliderComp />
     </HomeWrapper>
   )

@@ -10,9 +10,10 @@ import "swiper/css/pagination"
 //import "./style.css"
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper"
-import { SwiperWrapper } from "./style"
+import { EffectCoverflow, Navigation, Pagination } from "swiper"
+import { PaginationBlock, SwiperWrapper } from "./style"
 import { Container } from "../../style/global"
+import { SupplierTitle } from "../../../pages/home/jet-official-supplier/style"
 
 export const SliderComp = () => {
   const arr = [
@@ -40,6 +41,7 @@ export const SliderComp = () => {
 
   return (
     <Container>
+      <SupplierTitle>Отзывы</SupplierTitle>
       <SwiperWrapper>
         <Swiper
           effect={"coverflow"}
@@ -47,6 +49,10 @@ export const SliderComp = () => {
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={3}
+          navigation={{
+            nextEl: ".next",
+            prevEl: ".prev",
+          }}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -55,8 +61,32 @@ export const SliderComp = () => {
             //slideShadows: true,
           }}
           pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
+          breakpoints={{
+            320: {
+              slidesPerView: 1.5,
+              centeredSlides: false,
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 50,
+                modifier: 1,
+                //slideShadows: true,
+              },
+            },
+            768: {
+              slidesPerView: 3,
+              centeredSlides: true,
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 50,
+                modifier: 1,
+                //slideShadows: true,
+              },
+            },
+          }}
         >
           {arr.map((img, idx) => (
             <SwiperSlide key={idx}>
@@ -80,6 +110,34 @@ export const SliderComp = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <PaginationBlock>
+          <svg
+            className={"prev"}
+            width="53"
+            height="38"
+            viewBox="0 0 53 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.23223 17.2322C0.255922 18.2085 0.255922 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM53 16.5L3 16.5V21.5L53 21.5V16.5Z"
+              fill="#E4A135"
+            />
+          </svg>
+          <svg
+            className={"next"}
+            width="53"
+            height="38"
+            viewBox="0 0 53 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M51.7678 20.7678C52.7441 19.7915 52.7441 18.2085 51.7678 17.2322L35.8579 1.32233C34.8816 0.346023 33.2986 0.346023 32.3223 1.32233C31.346 2.29864 31.346 3.88156 32.3223 4.85787L46.4645 19L32.3223 33.1421C31.346 34.1184 31.346 35.7014 32.3223 36.6777C33.2986 37.654 34.8816 37.654 35.8579 36.6777L51.7678 20.7678ZM-2.18557e-07 21.5L50 21.5L50 16.5L2.18557e-07 16.5L-2.18557e-07 21.5Z"
+              fill="#E4A135"
+            />
+          </svg>
+        </PaginationBlock>
       </SwiperWrapper>
     </Container>
   )

@@ -3,11 +3,14 @@ import { TitleGL } from "../../../common/style/global"
 
 export const JetDeliveryWrapper = styled.div`
   padding-bottom: 100px;
+  @media (max-width: 1920px) {
+    padding-bottom: calc(30px + (100 - 30) * ((100vw - 390px) / (1920 - 390)));
+  }
 `
 export const ImgWrap = styled.div`
   width: 100%;
   @media (max-width: 500px) {
-     height: 215px;
+    height: 215px;
   }
 
   img {
@@ -72,8 +75,7 @@ export const ButtonBlock = styled.div`
       color: var(--color-ogange);
       svg {
         transform: translateX(5px);
-
-
+        
         path {
           fill: var(--color-ogange);
         }

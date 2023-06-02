@@ -5,7 +5,8 @@ import {
   DeliveryBlock,
   ImgWrap,
   JetDeliveryWrapper,
-  SubTitle, TitleDelivery,
+  SubTitle,
+  TitleDelivery,
 } from "./style"
 import { Container, TitleGL } from "../../../common/style/global"
 import DiverlyImg from "../assets/diverly-img.png"
