@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 import "./null.css"
 import "../../assets/fonts/fonts.css"
@@ -59,7 +59,7 @@ export default createGlobalStyle`
   }
 `
 export const Container = styled.div.attrs({
-    className: "container",
+  className: "container",
 })`
   max-width: 1650px;
   box-sizing: content-box;
