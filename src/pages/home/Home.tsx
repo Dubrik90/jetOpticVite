@@ -17,7 +17,6 @@ export const Home = () => {
       <JetChillerAbout />
       <OfficialSupplier />
       <JetDelivery />
-      {/*<JetSliderReviews/>*/}
       <SliderComp />
     </HomeWrapper>
   )
