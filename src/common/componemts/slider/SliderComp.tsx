@@ -10,6 +10,7 @@ import "swiper/css/pagination"
 //import "./style.css"
 
 // import required modules
+// @ts-ignore
 import { EffectCoverflow, Navigation, Pagination } from "swiper"
 import { PaginationBlock, SwiperWrapper } from "./style"
 import { Container } from "../../style/global"
