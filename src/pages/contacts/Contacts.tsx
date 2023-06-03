@@ -1,14 +1,18 @@
 import React from "react"
-import {ContactsWrapper, TitleContacts} from "./style"
+import { ContactsBlock, ContactsWrapper, TitleContacts } from "./style"
 import { Container } from "../../common/style/global"
-import {MapComponent} from "./map/Map";
+import { MapComponent } from "./map/Map"
+import { LinksBlock } from "./links-block/LinksBlock"
 
 export const Contacts = () => {
   return (
     <ContactsWrapper>
       <Container>
-          <TitleContacts>Контакты</TitleContacts>
-            <MapComponent/>
+        <TitleContacts>Контакты</TitleContacts>
+        <ContactsBlock>
+          <MapComponent />
+          <LinksBlock />
+        </ContactsBlock>
       </Container>
     </ContactsWrapper>
   )
