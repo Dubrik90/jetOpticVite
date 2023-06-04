@@ -82,7 +82,6 @@ export const Title = styled.h1`
   background: linear-gradient(0deg, #ffcf3d, #ffcf3d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   @media (max-width: 1920px) {
     font-size: calc(36px + (180 - 36) * ((100vw - 390px) / (1920 - 390)));
   }

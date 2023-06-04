@@ -10,8 +10,8 @@ import {
 import { Placemark, YMaps } from "react-yandex-maps"
 
 export const MapComponent = () => {
-  const mapState = { center: [52.228543, 20.99856], zoom: 16 }
-  const coordinates = [52.228543, 20.99856]
+  const mapState = { center: [59.923423, 30.363596], zoom: 16 }
+  const coordinates = [59.923423, 30.363596]
   const placemarkProperties = {
     balloonContent: "Лиговский проспект 50М",
   }
