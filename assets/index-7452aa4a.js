@@ -437,10 +437,10 @@ Error generating stack: `+o.message+`
 `,aE=I.div`
   position: fixed;
   right: 0;
-  width: 100%;
+ // width: 50%;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 50;
 `,sE=I.div`
   display: flex;
   flex-direction: column;
@@ -1567,4 +1567,4 @@ attempted value: ${a}
     }
   }
 `,j9=""+new URL("bg-feedback-a705deac.png",import.meta.url).href,P9=""+new URL("bg-feedback-mobile-2c1444b1.png",import.meta.url).href,M9=D1({name:La().required("Имя обязательно"),contact:La().required("Телефон или email обязательны"),message:La().required("Сообщение обязательно")}),I9=()=>{A.useEffect(()=>{document.title="Feedback — Jet Optic"},[]);const e=CP({initialValues:{name:"",contact:"",message:""},validationSchema:M9,onSubmit:t=>{console.log(t)}});return w.jsxs(b9,{src:j9,children:[w.jsx(E9,{children:w.jsx("img",{loading:"lazy",src:P9,alt:"HomeBg"})}),w.jsx(bt,{children:w.jsx(C9,{children:w.jsxs(T9,{children:[w.jsx(A9,{children:"Обратная связь"}),w.jsxs("form",{onSubmit:e.handleSubmit,children:[w.jsxs(O9,{children:[w.jsxs(hu,{children:[w.jsx(mu,{type:"text",id:"name",name:"name",placeholder:"Имя",onChange:e.handleChange,onBlur:e.handleBlur,value:e.values.name}),e.touched.name&&e.errors.name&&w.jsx(gu,{children:e.errors.name})]}),w.jsxs(hu,{children:[w.jsx(mu,{type:"text",id:"contact",name:"contact",placeholder:"Телефон или email",onChange:e.handleChange,onBlur:e.handleBlur,value:e.values.contact}),e.touched.contact&&e.errors.contact&&w.jsx(gu,{children:e.errors.contact})]}),w.jsxs(hu,{children:[w.jsx(mu,{as:"textarea",id:"message",className:"textarea",name:"message",placeholder:"Сообщение",onChange:e.handleChange,onBlur:e.handleBlur,value:e.values.message}),e.touched.message&&e.errors.message&&w.jsx(gu,{children:e.errors.message})]})]}),w.jsxs(k9,{type:"submit",children:["Отправить",w.jsx("span",{children:w.jsx("svg",{width:"31",height:"16",viewBox:"0 0 31 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:w.jsx("path",{d:"M30.7071 8.70711C31.0976 8.31659 31.0976 7.68342 30.7071 7.2929L24.3431 0.928934C23.9526 0.53841 23.3195 0.53841 22.9289 0.928934C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM-8.74228e-08 9L30 9L30 7L8.74228e-08 7L-8.74228e-08 9Z",fill:"black"})})})]})]})]})})})]})},R9=()=>w.jsx(kb,{children:w.jsxs(Fr,{path:jt.HOME,element:w.jsx(yE,{}),children:[w.jsx(Fr,{path:jt.HOME,element:w.jsx(rT,{})}),w.jsx(Fr,{path:jt.ABOUT,element:w.jsx(dT,{})}),w.jsx(Fr,{path:jt.CONTACTS,element:w.jsx(WT,{})}),w.jsx(Fr,{path:jt.FEEDBACK,element:w.jsx(I9,{})})]})});vu.createRoot(document.getElementById("root")).render(w.jsx(w.Fragment,{children:w.jsxs(oS,{store:qg,children:[w.jsx(_2,{}),w.jsx(Rb,{children:w.jsx(R9,{})})]})}));
-//# sourceMappingURL=index-c3fb3f33.js.map
+//# sourceMappingURL=index-7452aa4a.js.map
