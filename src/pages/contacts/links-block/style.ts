@@ -22,12 +22,12 @@ export const BlockLinks = styled.div`
     display: flex;
     align-items: center;
     column-gap: 20px;
-    
+
     span {
       transition: color 0.3s;
     }
     :hover {
-      span{
+      span {
         color: var(--color-ogange-border);
       }
     }

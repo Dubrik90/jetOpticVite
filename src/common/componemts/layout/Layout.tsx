@@ -5,19 +5,20 @@ import { Footer } from "../footer/Footer"
 import { MainWrapper } from "./style"
 import { BarLinks } from "../social-links-bar/BarLinks"
 import { BarBottom } from "../bar-bottom/BarBottom"
+import { ScrollToTop } from "../../hooks/scrollToTop/ScrollToTop"
 
 export const Layout = () => {
   return (
     <>
-      {/*<ScrollToTop/>*/}
+      <ScrollToTop />
       <Header />
-      {/*<BarLinks*/}
-      {/*  whatsapp={""}*/}
-      {/*  instagram={"@jetoptic"}*/}
-      {/*  youtube={"- @jetOptic"}*/}
-      {/*  email={"tekhnikakrasoty@mail.ru(e-mail)"}*/}
-      {/*/>*/}
-      {/*<BarBottom />*/}
+      <BarLinks
+        whatsapp={""}
+        instagram={"@jetoptic"}
+        youtube={"- @jetOptic"}
+        email={"tekhnikakrasoty@mail.ru(e-mail)"}
+      />
+      <BarBottom />
       <MainWrapper>
         <Outlet />
       </MainWrapper>

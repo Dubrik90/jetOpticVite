@@ -1,20 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {
   AboutBlock,
-  AboutContent, AboutContent2,
+  AboutContent,
+  AboutContent2,
   AboutText,
   AboutWrapper,
   Content,
   ImgBlock,
   TitleAbout,
 } from "./style"
-import { Container } from "../../common/style/global"
 import img1 from "./assets/about-img-1.png"
 import img1Mob from "./assets/about-img-1-mobile.png"
 import img2Mob from "./assets/about-img-2-mobile.png"
 import img2 from "./assets/about-img-2.png"
 
 export const About = () => {
+  useEffect(() => {
+    document.title = "About — Jet Optic"
+  }, [])
   return (
     <AboutWrapper>
       <AboutBlock>
@@ -22,7 +25,7 @@ export const About = () => {
           <ImgBlock>
             <picture>
               <source media="(max-width: 767px)" srcSet={img1Mob} />
-              <img src={img1} alt="картинка оборудования" />
+              <img loading={"lazy"} src={img1} alt="картинка оборудования" />
             </picture>
           </ImgBlock>
           <Content>
@@ -49,7 +52,7 @@ export const About = () => {
           <ImgBlock>
             <picture>
               <source media="(max-width: 767px)" srcSet={img2Mob} />
-              <img src={img2} alt="картинка оборудования" />
+              <img loading={"lazy"} src={img2} alt="картинка оборудования" />
             </picture>
           </ImgBlock>
         </AboutContent2>

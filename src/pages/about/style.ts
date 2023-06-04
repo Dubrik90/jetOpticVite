@@ -17,7 +17,6 @@ export const AboutBlock = styled.div`
   @media (max-width: 1920px) {
     row-gap: calc(20px + (57 - 20) * ((100vw - 390px) / (1920 - 390)));
   }
-  
 `
 export const AboutContent = styled.div`
   display: grid;

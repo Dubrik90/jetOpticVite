@@ -1,5 +1,5 @@
 import React from "react"
-import HomeBg from "../assets/jet-bg.png"
+import HomeBg from "../assets/jet-bg.webp"
 import { Container } from "../../../common/style/global"
 import {
   AboutJetOptic,
@@ -22,7 +22,7 @@ export const JetHead = () => {
         </Content>
       </Container>
       <ImgWrap>
-        <img src={HomeBg} alt="HomeBg" />
+        <img loading={"lazy"} src={HomeBg} alt="HomeBg" />
       </ImgWrap>
     </AboutJetOptic>
   )

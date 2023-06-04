@@ -5,7 +5,7 @@ import {
   TextAbout,
   TitleAbout,
 } from "./style"
-import { Container, TextGL } from "../../../common/style/global"
+import { Container} from "../../../common/style/global"
 
 export const JetAbout = () => {
   return (

@@ -10,7 +10,7 @@ import { ROUTS } from "../../../constans/routs"
 import { Burger } from "../../../style/Burger"
 import { useScrollBlock } from "../../../hooks/use-scroll-block"
 import { useAppDispatch } from "../../../hooks/UseDispatch"
-import { selectOpenBurger, setIsOpenBurgerAC } from "../../../../app/app-reduser"
+import { setIsOpenBurgerAC } from "../../../../app/app-reduser"
 import { useAppSelector } from "../../../hooks/UseSelector"
 
 export const Menu = () => {

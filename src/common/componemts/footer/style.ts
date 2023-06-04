@@ -23,7 +23,7 @@ export const FooterContent = styled.div`
 `
 
 export const Partner = styled.p`
-  font-family: Dewberry;
+  font-family: "Dewberry";
   font-weight: var(--fw-semiBold);
   font-size: 36px;
   line-height: 1.13;
@@ -43,6 +43,8 @@ export const Partner = styled.p`
   }
 `
 export const LogoFooterWrapper = styled(LogoWrapper)`
+  position: relative;
+  z-index: 60;
   a {
     @media (max-width: 1920px) {
       font-size: calc(14px + (28 - 14) * ((100vw - 768px) / (1920 - 768)));

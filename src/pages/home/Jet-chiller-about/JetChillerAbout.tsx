@@ -8,11 +8,11 @@ import {
   JetChillerAboutWrapper,
 } from "./style"
 import { Container } from "../../../common/style/global"
-import CillerBg from "../assets/chillerBg.png"
+import CillerBg from "../assets/chillerBg.webp"
 import { SvgComponent } from "../../../common/componemts/svg-component/SvgComponent"
 import { CardContent, CardText, CardTitle } from "../jet-characteristic/style"
-import CoolIc from "../assets/cool.svg"
-import ElemIc from "../assets/elements.svg"
+import CoolIc from "../assets/cool.webp"
+import ElemIc from "../assets/elements.webp"
 import VentIc from "../assets/vent.svg"
 
 export const JetChillerAbout = () => {

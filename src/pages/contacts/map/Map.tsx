@@ -1,13 +1,13 @@
 import React from "react"
 import {
-  CardWrapper,
   ContactBlock,
+  MapComponentWrapper,
   MapWrapper,
   StyledMap,
   SubTitle,
   TitleContacts,
 } from "./style"
-import { GeoObject, Placemark, YMaps } from "react-yandex-maps"
+import { Placemark, YMaps } from "react-yandex-maps"
 
 export const MapComponent = () => {
   const mapState = { center: [52.228543, 20.99856], zoom: 16 }
@@ -17,7 +17,7 @@ export const MapComponent = () => {
   }
 
   return (
-    <>
+    <MapComponentWrapper>
       <ContactBlock>
         <TitleContacts>Находимся по адресу:</TitleContacts>
         <SubTitle>
@@ -35,6 +35,6 @@ export const MapComponent = () => {
           </StyledMap>
         </YMaps>
       </MapWrapper>
-    </>
+    </MapComponentWrapper>
   )
 }

@@ -8,10 +8,8 @@ import {
   SubTitle,
   TitleDelivery,
 } from "./style"
-import { Container, TitleGL } from "../../../common/style/global"
-import DiverlyImg from "../assets/diverly-img.png"
-import Arrow from "../assets/Arrow.svg"
-import { SvgComponent } from "../../../common/componemts/svg-component/SvgComponent"
+import { Container } from "../../../common/style/global"
+import DiverlyImg from "../assets/diverly-img.webp"
 
 export const JetDelivery = () => {
   return (

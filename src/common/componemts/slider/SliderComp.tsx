@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React from "react"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -7,9 +7,6 @@ import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 
-//import "./style.css"
-
-// import required modules
 // @ts-ignore
 import { EffectCoverflow, Navigation, Pagination } from "swiper"
 import { PaginationBlock, SwiperWrapper } from "./style"
@@ -50,6 +47,9 @@ export const SliderComp = () => {
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={3}
+          pagination={{
+            clickable: true, // Добавляем кликабельность
+          }}
           navigation={{
             nextEl: ".next",
             prevEl: ".prev",
@@ -61,7 +61,6 @@ export const SliderComp = () => {
             modifier: 1,
             //slideShadows: true,
           }}
-          pagination={true}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
           breakpoints={{

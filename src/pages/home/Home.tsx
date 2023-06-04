@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { HomeWrapper } from "./style"
 import { JetHead } from "./jet-head/JetHead"
 import { JetAbout } from "./jet-about/JetAbout"
@@ -9,6 +9,9 @@ import { JetDelivery } from "./jet-delivery/JetDelivery"
 import { SliderComp } from "../../common/componemts/slider/SliderComp"
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = "Home — Jet Optic"
+  }, [])
   return (
     <HomeWrapper>
       <JetHead />

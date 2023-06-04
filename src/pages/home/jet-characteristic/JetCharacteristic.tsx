@@ -12,7 +12,7 @@ import {
   Row3,
 } from "./style"
 import { Container } from "../../../common/style/global"
-import Ap from "../assets/characteristic.png"
+import Ap from "../assets/characteristic.webp"
 import Length from "../assets/lenght.svg"
 import Energy from "../assets/energy.svg"
 import Power from "../assets/power.svg"

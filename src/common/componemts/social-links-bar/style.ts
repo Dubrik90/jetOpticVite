@@ -6,7 +6,7 @@ export const BarLinksWrap = styled.div`
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 1;
 `
 export const BarLinksBlock = styled.div`
   display: flex;

@@ -1,5 +1,3 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const CharacterCardWrapper = styled.div`
-
-`
+export const CharacterCardWrapper = styled.div``

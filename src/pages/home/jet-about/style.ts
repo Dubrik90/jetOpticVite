@@ -27,7 +27,7 @@ export const TitleAbout = styled(TitleGL)`
   }
 `
 export const TextAbout = styled(TextGL)`
-    max-width: 785px;
+  max-width: 785px;
   @media (max-width: 1920px) {
     max-width: calc(320px + (785 - 320) * ((100vw - 768px) / (1920 - 768)));
   }

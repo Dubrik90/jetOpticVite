@@ -20,7 +20,7 @@ export const CharacteristicContent = styled.div<{ src: string }>`
     height: calc(300px + (1091 - 300) * ((100vw - 390px) / (1920 - 390)));
   }
   :before {
-    content: '';
+    content: "";
     width: 370px;
     height: 370px;
     position: absolute;

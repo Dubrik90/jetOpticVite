@@ -19,16 +19,16 @@ export const BarLinks: React.FC<SocialLinksProps> = ({
         <BarLinksBlock>
           {/*<BarLinksWrapper>*/}
           <a target={"_blank"} href={`https://wa.me/${whatsapp}`}>
-            <img src={WhatsappIc} alt="WhatsApp" />
+            <img loading={"lazy"} src={WhatsappIc} alt="WhatsApp" />
           </a>
           <a target={"_blank"} href={`https://www.instagram.com/${instagram}`}>
-            <img src={InstaIc} alt="Instagram" />
+            <img loading={"lazy"} src={InstaIc} alt="Instagram" />
           </a>
           <a target={"_blank"} href={`https://www.youtube.com/${youtube}`}>
-            <img src={YuoTubeIc} alt="YouTube" />
+            <img loading={"lazy"} src={YuoTubeIc} alt="YouTube" />
           </a>
           <a target={"_blank"} href={`mailto:${email}`}>
-            <img src={EmailIc} alt="Email" />
+            <img loading={"lazy"} src={EmailIc} alt="Email" />
           </a>
           {/*</BarLinksWrapper>*/}
         </BarLinksBlock>

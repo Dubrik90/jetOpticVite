@@ -1,6 +1,5 @@
 import React, { FC } from "react"
 import { CharacterCardWrapper } from "./style"
-import {SvgComponent} from "../svg-component/SvgComponent";
 
 type CharacterCardProps = {
   img: string
@@ -14,9 +13,8 @@ export const CharacterCard: FC<CharacterCardProps> = ({
   title,
 }) => {
   return (
-      <CharacterCardWrapper>
-        {/*<SvgComponent src={img} />*/}
-
-      </CharacterCardWrapper>
+    <CharacterCardWrapper>
+      {/*<SvgComponent src={img} />*/}
+    </CharacterCardWrapper>
   )
 }

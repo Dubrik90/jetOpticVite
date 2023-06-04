@@ -5,8 +5,10 @@ import { Route, Routes } from "react-router-dom"
 import { About } from "./pages/about/About"
 import { Contacts } from "./pages/contacts/Contacts"
 import { Feedback } from "./pages/feedback/Feedback"
+import { useEffect } from "react"
 
 export const App = () => {
+
   return (
     <Routes>
       <Route path={ROUTS.HOME} element={<Layout />}>

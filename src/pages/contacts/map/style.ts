@@ -2,6 +2,11 @@ import styled from "styled-components"
 
 import { Map } from "react-yandex-maps"
 
+export const MapComponentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 export const StyledMap = styled(Map)`
   margin-top: 50px;
   width: 826px;

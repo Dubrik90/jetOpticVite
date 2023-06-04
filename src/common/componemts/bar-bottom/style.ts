@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const BarFoot = styled.div`
-  z-index: 50;
+  z-index: 70;
   position: fixed;
   width: 100%;
   bottom: 40px;
@@ -10,6 +10,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 5px;
 `
 export const RequestCall = styled.div`
   font-family: "Dewberry";
