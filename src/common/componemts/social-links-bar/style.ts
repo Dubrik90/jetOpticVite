@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const BarLinksWrap = styled.div`
   position: fixed;
   right: 0;
-  width: 100%;
+ // width: 50%;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 50;
 `
 export const BarLinksBlock = styled.div`
   display: flex;
