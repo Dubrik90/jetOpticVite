@@ -92,7 +92,7 @@ export const SliderComp = () => {
             <SwiperSlide key={idx}>
               <h3>{img.title}</h3>
               <p>{img.text}</p>
-              <a target={"_blank"} href="https://ya.ru/">
+              <a target={"_blank"} href="https://www.instagram.com/@jetoptic">
                 Читать полностью
                 <svg
                   width="52"

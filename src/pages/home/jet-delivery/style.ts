@@ -36,16 +36,7 @@ export const Content = styled.div`
 export const SubTitle = styled.button.attrs({
   type: "button",
 })`
-  font-family: "Mulish";
-  font-weight: var(--fw-bold);
-  font-size: 36px;
-  line-height: 1.13;
-  @media (max-width: 1920px) {
-    font-size: calc(14px + (36 - 14) * ((100vw - 390px) / (1920 - 390)));
-  }
-  @media (max-width: 500px) {
-    color: var(--color-dark);
-  }
+ 
 `
 export const TitleDelivery = styled(TitleGL)`
   @media (max-width: 500px) {
@@ -65,13 +56,27 @@ export const DeliveryBlock = styled.div`
   }
 `
 export const ButtonBlock = styled.div`
-  display: flex;
-  align-items: center;
-  column-gap: 25px;
-  transition: color 0.3s;
-  color: var(--color-withe);
+  
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    transition: color 0.3s;
+    color: var(--color-withe);
+    font-family: "Mulish";
+    font-weight: var(--fw-bold);
+    font-size: 36px;
+    line-height: 1.13;
+    @media (max-width: 1920px) {
+      font-size: calc(14px + (36 - 14) * ((100vw - 390px) / (1920 - 390)));
+    }
+    @media (max-width: 500px) {
+      color: var(--color-dark);
+    }
+  }
+  
   @media (min-width: 501px) {
-    :hover {
+    a:hover {
       color: var(--color-ogange);
       svg {
         transform: translateX(5px);

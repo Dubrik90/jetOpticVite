@@ -166,6 +166,16 @@ export const InputField = styled.input`
       color: white;
     }
   }
+  resize: none;
+  .textarea {
+    background-color: initial;
+    color: initial;
+    font-family: initial;
+    font-size: initial;
+    width: 100%;
+    height: 50px;
+    
+  }
 `
 
 export const ErrorMessage = styled.div`

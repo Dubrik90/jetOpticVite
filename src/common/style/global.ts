@@ -47,7 +47,7 @@ export default createGlobalStyle`
     font-family: var(--family);
     font-weight: var(--fw-regular);
     background-color: var(--colors-bg);
-    font-size: var(--fs-36);
+    font-size: 36px;
     transition: all 0.3s;
     color: var(--color-withe);
   }

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import { useFormik } from "formik"
 import * as Yup from "yup"
 import {
@@ -56,6 +56,8 @@ export const Feedback: React.FC = () => {
                     type="text"
                     id="name"
                     name="name"
+                    aria-required="true"
+                    aria-invalid="false"
                     placeholder="Имя"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}

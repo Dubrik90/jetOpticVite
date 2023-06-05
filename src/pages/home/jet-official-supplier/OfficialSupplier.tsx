@@ -18,7 +18,7 @@ import { SvgComponent } from "../../../common/componemts/svg-component/SvgCompon
 
 export const OfficialSupplier = () => {
   const columnData = [
-    { id: "0", img: Ic1, text: "2 года гарантиии от сервисного центра" },
+    { id: "0", img: Ic1, text: "2 года гарантии от сервисного центра" },
     { id: "1", img: Ic2, text: "Бесплатное обучение и поддержка" },
     { id: "2", img: Ic3, text: "Быстрая окупаемость" },
     { id: "3", img: Ic4, text: "Сертификация аппарата и излучателя по ЕАС" },
