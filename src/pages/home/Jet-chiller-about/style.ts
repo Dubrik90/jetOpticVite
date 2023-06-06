@@ -89,9 +89,14 @@ export const ChillerCard = styled(Card)`
   bottom: -150px;
   position: relative;
   max-width: 500px;
+  &:nth-child(1) {
+    @media (max-width: 1920px) {
+      max-width: calc(180px + (500 - 180) * ((100vw - 390px) / (1920 - 390)));
+    }
+  }
   @media (max-width: 1920px) {
     bottom: calc(-35px + (-150 - -35) * ((100vw - 390px) / (1920 - 390)));
-    max-width: calc(110px + (500 - 110) * ((100vw - 390px) / (1920 - 390)));
+    max-width: calc(160px + (500 - 160) * ((100vw - 390px) / (1920 - 390)));
   }
   svg {
     width: 200px;

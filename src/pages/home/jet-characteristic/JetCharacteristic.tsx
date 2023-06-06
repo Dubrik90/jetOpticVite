@@ -39,7 +39,7 @@ export const JetCharacteristic = () => {
           <Card className={"bottom"}>
             <SvgComponent src={Resource} width={"100px"} height={"80px"} />
             <CardContent>
-              <CardTitle>30 млн импульсов</CardTitle>
+              <CardTitle>До 30 млн импульсов</CardTitle>
               <CardText>Ресурс излучателя</CardText>
             </CardContent>
           </Card>

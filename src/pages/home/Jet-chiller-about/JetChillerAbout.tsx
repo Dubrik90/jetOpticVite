@@ -32,8 +32,8 @@ export const JetChillerAbout = () => {
         <ChillerCard>
           <SvgComponent src={ElemIc} width={"100px"} height={"80px"} />
           <CardContent>
-            <CardTitle>24 часа</CardTitle>
-            <CardText>2 элемента Пельтье по 55 Вт</CardText>
+            <CardTitle>Безболезненность</CardTitle>
+            <CardText>TEC система манипулы</CardText>
           </CardContent>
         </ChillerCard>
         <ChillerCard>

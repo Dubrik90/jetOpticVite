@@ -49,9 +49,9 @@ export const Card = styled.div`
   align-self: flex-end;
   @media (max-width: 1920px) {
     padding: calc(7px + (40 - 7) * ((100vw - 390px) / (1920 - 390)))
-      calc(5px + (10 - 5) * ((100vw - 390px) / (1920 - 390)))
+      calc(10px + (10 - 10) * ((100vw - 390px) / (1920 - 390)))
       calc(7px + (40 - 7) * ((100vw - 390px) / (1920 - 390)))
-      calc(5px + (28 - 5) * ((100vw - 390px) / (1920 - 390)));
+      calc(7px + (28 - 7) * ((100vw - 390px) / (1920 - 390)));
     column-gap: calc(10px + (42 - 10) * ((100vw - 390px) / (1920 - 390)));
     border-radius: calc(10px + (54 - 10) * ((100vw - 390px) / (1920 - 390)));
     max-width: calc(110px + (395 - 110) * ((100vw - 390px) / (1920 - 390)));

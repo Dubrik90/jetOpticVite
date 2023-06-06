@@ -14,14 +14,14 @@ export const LogoWrapper = styled.div`
     transition: color 0.3s;
 
     @media (max-width: 1920px) {
-      font-size: calc(11px + (28 - 11) * ((100vw - 768px) / (1920 - 768)));
-      padding: calc(10px + (24 - 10) * ((100vw - 768px) / (1920 - 768)))
-        calc(14px + (35 - 14) * ((100vw - 768px) / (1920 - 768)));
+      font-size: calc(13px + (28 - 13) * ((100vw - 768px) / (1920 - 768)));
+      padding: calc(7px + (24 - 7) * ((100vw - 768px) / (1920 - 768)))
+        calc(16px + (35 - 16) * ((100vw - 768px) / (1920 - 768)));
     }
     @media (max-width: 767px) {
       border: 1px solid var(--color-red-border);
-      font-size: 11px;
-      padding: 10px 14px;
+      font-size: 14px;
+      padding: 7px 16px;
     }
 
     span {

@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 100;
 `
 export const HeaderContent = styled.div`
   height: 125px;

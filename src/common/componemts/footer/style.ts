@@ -47,14 +47,14 @@ export const LogoFooterWrapper = styled(LogoWrapper)`
   z-index: 60;
   a {
     @media (max-width: 1920px) {
-      font-size: calc(14px + (28 - 14) * ((100vw - 768px) / (1920 - 768)));
+      font-size: calc(16px + (28 - 16) * ((100vw - 768px) / (1920 - 768)));
       padding: calc(12px + (24 - 12) * ((100vw - 768px) / (1920 - 768)))
         calc(40px + (35 - 40) * ((100vw - 768px) / (1920 - 768)));
     }
     @media (max-width: 767px) {
       border: 2px solid var(--color-red-border);
-      font-size: 14px;
-      padding: 12px 40px;
+      font-size: 16px;
+      padding: 10px 40px;
     }
   }
 `

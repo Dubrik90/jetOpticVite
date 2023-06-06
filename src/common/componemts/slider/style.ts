@@ -91,11 +91,6 @@ export const SwiperWrapper = styled.div`
           width: calc(18px + (50 - 18) * ((100vw - 390px) / (1920 - 390)));
           height: calc(20px + (40 - 20) * ((100vw - 390px) / (1920 - 390)));
         }
-        @media (max-width: 500px) {
-          path {
-            fill: var(--color-dark);
-          }
-        }
       }
     }
     .swiper-slide-prev,

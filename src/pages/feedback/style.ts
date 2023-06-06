@@ -123,6 +123,18 @@ export const FormContainer = styled.div`
 `
 export const InputContainer = styled.div`
   position: relative;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    @media (max-width: 767px) {
+      -webkit-text-fill-color: #fff;
+    }
+  }
 `
 export const InputField = styled.input`
   background: rgba(255, 255, 255, 0);
@@ -174,8 +186,8 @@ export const InputField = styled.input`
     font-size: initial;
     width: 100%;
     height: 50px;
-    
   }
+  
 `
 
 export const ErrorMessage = styled.div`
