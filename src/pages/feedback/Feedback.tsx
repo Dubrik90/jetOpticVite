@@ -14,8 +14,8 @@ import {
   TitleForm,
 } from "./style"
 import { Container } from "../../common/style/global"
-import HomeBg from "./assets/bg-feedback.png"
-import FeedbackImgMobile from "./assets/bg-feedback-mobile.png"
+import HomeBg from "./assets/bg-feedback.webp"
+import FeedbackImgMobile from "./assets/bg-feedback-mobile.webp"
 
 // Определение схемы валидации с Yup
 const validationSchema = Yup.object({
