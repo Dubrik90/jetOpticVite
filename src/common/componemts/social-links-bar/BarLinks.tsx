@@ -14,6 +14,7 @@ export const BarLinks: React.FC<SocialLinksProps> = ({
   email,
 }) => {
   return (
+
     <BarLinksWrap>
       <Container>
         <BarLinksBlock>

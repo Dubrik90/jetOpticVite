@@ -103,7 +103,7 @@ export const CardContent = styled.div`
 `
 export const CardTitle = styled.div`
   font-weight: var(--fw-semiBold);
-  font-size: var(--fs-36);
+  font-size: var(--fs-30);
   line-height: 1.12;
   color: var(--color-ogange);
   @media (max-width: 1920px) {
@@ -111,12 +111,12 @@ export const CardTitle = styled.div`
   }
 `
 export const CardText = styled.div`
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.12;
   text-transform: uppercase;
   color: var(--color-withe);
   @media (max-width: 1920px) {
-    font-size: calc(8px + (32 - 8) * ((100vw - 390px) / (1920 - 390)));
+    font-size: calc(8px + (28 - 8) * ((100vw - 390px) / (1920 - 390)));
   }
 `
 

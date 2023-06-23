@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <>
     <Provider store={store}>
       <GlobalStyles />
-      <HashRouter>
+      <BrowserRouter>
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   </>,
 )

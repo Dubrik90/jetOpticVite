@@ -17,7 +17,6 @@ import { Container } from "../../common/style/global"
 import HomeBg from "./assets/bg-feedback.webp"
 import FeedbackImgMobile from "./assets/bg-feedback-mobile.webp"
 
-// Определение схемы валидации с Yup
 const validationSchema = Yup.object({
   name: Yup.string().required("Имя обязательно"),
   contact: Yup.string().required("Телефон или email обязательны"),
@@ -36,7 +35,22 @@ export const Feedback: React.FC = () => {
     },
     validationSchema,
     onSubmit: (values) => {
-      console.log(values) // Здесь можно добавить логику для отправки данных на сервер
+      const formElement = document.querySelector("form")
+      if (formElement instanceof HTMLFormElement) {
+        fetch("../back/mail.php", {
+          method: "POST",
+          body: new FormData(formElement),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Обработка ответа от сервера
+            console.log(data)
+          })
+          .catch((error) => {
+            // Обработка ошибки
+            console.error(error)
+          })
+      }
     },
   })
 

@@ -6,13 +6,13 @@ export const FooterWrapper = styled.footer`
 `
 
 export const FooterContent = styled.div`
-  height: 270px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (max-width: 1920px) {
-    height: calc(109px + (270 - 109) * ((100vw - 768px) / (1920 - 768)));
+    height: calc(109px + (200 - 109) * ((100vw - 768px) / (1920 - 768)));
   }
   @media (max-width: 767px) {
     height: auto;
@@ -48,7 +48,7 @@ export const LogoFooterWrapper = styled(LogoWrapper)`
   a {
     @media (max-width: 1920px) {
       font-size: calc(16px + (28 - 16) * ((100vw - 768px) / (1920 - 768)));
-      padding: calc(12px + (24 - 12) * ((100vw - 768px) / (1920 - 768)))
+      padding: calc(12px + (16 - 12) * ((100vw - 768px) / (1920 - 768)))
         calc(40px + (35 - 40) * ((100vw - 768px) / (1920 - 768)));
     }
     @media (max-width: 767px) {

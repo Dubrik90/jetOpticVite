@@ -13,9 +13,9 @@ export default createGlobalStyle`
     //  --fs-14: 14px;
     --fs-16: 16px;
     --fs-18: 18px;
-    --fs-36: 36px;
+    --fs-30: 30px;
     --fs-48: 48px;
-    --fs-96: 96px;
+    --fs-60: 60px;
 
     --fw-regular: 400;
     --fw-medium: 500;
@@ -74,19 +74,19 @@ export const Container = styled.div.attrs({
 export const TitleGL = styled.h2`
   font-family: "Dewberry";
   font-weight: var(--fw-semiBold);
-  font-size: var(--fs-96);
+  font-size: var(--fs-60);
   line-height: 1.14;
   letter-spacing: 0.05em;
   color: var(--color-withe);
   @media (max-width: 1920px) {
-    font-size: calc(20px + (96 - 20) * ((100vw - 390px) / (1920 - 390)));
+    font-size: calc(20px + (60 - 20) * ((100vw - 390px) / (1920 - 390)));
   }
 `
 export const TextGL = styled.p`
-  font-size: var(--fs-36);
+  font-size: var(--fs-30);
   line-height: 1.12;
   color: var(--color-withe);
   @media (max-width: 1920px) {
-    font-size: calc(14px + (36 - 14) * ((100vw - 390px) / (1920 - 390)));
+    font-size: calc(14px + (26 - 14) * ((100vw - 390px) / (1920 - 390)));
   }
 `

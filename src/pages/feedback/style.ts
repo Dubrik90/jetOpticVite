@@ -187,7 +187,6 @@ export const InputField = styled.input`
     width: 100%;
     height: 50px;
   }
-  
 `
 
 export const ErrorMessage = styled.div`
@@ -216,6 +215,14 @@ export const Button = styled.button`
   cursor: pointer;
   :hover {
     color: var(--color-ogange-border);
+    span {
+      svg {
+        path {
+          transition: all 0.3s;
+          fill: var(--color-ogange-border);
+        }
+      }
+    }
   }
   @media (max-width: 1920px) {
     font-size: calc(18px + (36 - 18) * ((100vw - 390px) / (1920 - 390)));

@@ -12,7 +12,7 @@ export const PhoneLink = styled.a`
   margin-right: 94px;
 
   @media (max-width: 1920px) {
-    font-size: calc(16px + (36 - 16) * ((100vw - 768px) / (1920 - 768)));
+    font-size: calc(16px + (26 - 16) * ((100vw - 768px) / (1920 - 768)));
     margin-right: calc(52px + (94 - 52) * ((100vw - 768px) / (1920 - 768)));
 
     svg {
@@ -37,7 +37,7 @@ export const MenuLinks = styled.ul<{ isOpenBurger: boolean }>`
 
   a {
     @media (max-width: 1920px) {
-      font-size: calc(16px + (36 - 16) * ((100vw - 768px) / (1920 - 768)));
+      font-size: calc(16px + (26 - 16) * ((100vw - 768px) / (1920 - 768)));
     }
     @media (max-width: 768px) {
       font-size: var(--fs-16);
@@ -48,6 +48,9 @@ export const MenuLinks = styled.ul<{ isOpenBurger: boolean }>`
     :hover {
       color: var(--color-ogange);
     }
+  }
+  a.active {
+    color: var(--color-ogange);
   }
 
   @media (max-width: 767px) {

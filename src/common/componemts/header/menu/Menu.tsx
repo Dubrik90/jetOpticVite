@@ -4,7 +4,7 @@ import { SvgComponent } from "../../svg-component/SvgComponent"
 
 import PhoneIc from "./assets/phone-icon.svg"
 import { MenuLinksType } from "../../../types/type"
-import { Link } from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import { ROUTS } from "../../../constans/routs"
 
 import { Burger } from "../../../style/Burger"
@@ -45,9 +45,9 @@ export const Menu = () => {
           <span>8 800 201 96 70</span>
         </PhoneLink>
         {menuLinks.map((el) => (
-          <Link key={el.id} to={el.route} onClick={onClickCloseBurger}>
+          <NavLink key={el.id} to={el.route} onClick={onClickCloseBurger}>
             {el.link}
-          </Link>
+          </NavLink>
         ))}
       </MenuLinks>
       <Burger isOpenBurger={isOpenBurger} onClick={onClickOpenBurger}>

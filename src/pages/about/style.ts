@@ -2,9 +2,9 @@ import styled from "styled-components"
 import { TextGL, TitleGL } from "../../common/style/global"
 
 export const AboutWrapper = styled.div`
-  padding-top: 125px;
+  padding-top: 90px;
   @media (max-width: 1920px) {
-    padding-top: calc(50px + (125 - 50) * ((100vw - 768px) / (1920 - 768)));
+    padding-top: calc(50px + (90 - 50) * ((100vw - 768px) / (1920 - 768)));
   }
   @media (max-width: 767px) {
     padding-top: 50px;

@@ -9,6 +9,7 @@ export const JetDeliveryWrapper = styled.div`
 `
 export const ImgWrap = styled.div`
   width: 100%;
+  max-height: 800px;
   @media (max-width: 500px) {
     height: 215px;
   }
@@ -16,6 +17,7 @@ export const ImgWrap = styled.div`
   img {
     width: 100%;
     height: 100%;
+    max-height: 700px;
     object-fit: cover;
     object-position: top;
   }
@@ -56,6 +58,8 @@ export const DeliveryBlock = styled.div`
   }
 `
 export const ButtonBlock = styled.div`
+  position: relative;
+  z-index: 5;
   
   a {
     display: flex;

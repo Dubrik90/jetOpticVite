@@ -10,13 +10,13 @@ export const HeaderWrapper = styled.header`
   z-index: 100;
 `
 export const HeaderContent = styled.div`
-  height: 125px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (max-width: 1920px) {
-    height: calc(50px + (125 - 50) * ((100vw - 768px) / (1920 - 768)));
+    height: calc(50px + (90 - 50) * ((100vw - 768px) / (1920 - 768)));
   }
   @media (max-width: 767px) {
     height: 50px;

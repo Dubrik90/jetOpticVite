@@ -11,7 +11,7 @@ import {
 import { Container } from "../../../common/style/global"
 import DiverlyImg from "../assets/diverly-img.webp"
 import { Link } from "react-router-dom"
-import {ROUTS} from "../../../common/constans/routs";
+import { ROUTS } from "../../../common/constans/routs"
 
 export const JetDelivery = () => {
   return (
@@ -38,7 +38,6 @@ export const JetDelivery = () => {
                 />
               </svg>
             </Link>
-
 
             {/*<SvgComponent src={Arrow} width={"50px"} height={"40px"} />*/}
           </ButtonBlock>

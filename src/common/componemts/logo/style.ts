@@ -8,14 +8,14 @@ export const LogoWrapper = styled.div`
     display: inline-block;
     border: 2px solid var(--color-red-border);
     border-radius: 56px;
-    padding: 24px 35px;
-    font-size: 28px;
+    padding: 15px 35px;
+    font-size: 24px;
     cursor: pointer;
     transition: color 0.3s;
 
     @media (max-width: 1920px) {
-      font-size: calc(13px + (28 - 13) * ((100vw - 768px) / (1920 - 768)));
-      padding: calc(7px + (24 - 7) * ((100vw - 768px) / (1920 - 768)))
+      font-size: calc(13px + (24 - 13) * ((100vw - 768px) / (1920 - 768)));
+      padding: calc(7px + (15 - 7) * ((100vw - 768px) / (1920 - 768)))
         calc(16px + (35 - 16) * ((100vw - 768px) / (1920 - 768)));
     }
     @media (max-width: 767px) {
