@@ -1108,6 +1108,8 @@ Error generating stack: `+o.message+`
     padding-top: 30px;
     width: 100%;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
     @media (max-width: 768px) {
       padding-bottom: 50px;
     }
@@ -1117,6 +1119,7 @@ Error generating stack: `+o.message+`
       // max-height: 424px;
       overflow: hidden;
       padding: 54px 31px;
+      z-index: 1 !important;
       border: 2px solid #e4a135;
       border-radius: 20px;
       @media (max-width: 1920px) {
@@ -1127,13 +1130,13 @@ Error generating stack: `+o.message+`
       h3 {
         font-family: "Mulish";
         font-weight: var(--fw-bold);
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
         line-height: 1.13;
         color: var(--color-withe);
         margin-bottom: 38px;
         @media (max-width: 1920px) {
-          font-size: calc(14px + (40 - 14) * ((100vw - 390px) / (1920 - 390)));
+          font-size: calc(14px + (30 - 14) * ((100vw - 390px) / (1920 - 390)));
           margin-bottom: calc(
             7px + (38 - 7) * ((100vw - 768px) / (1920 - 768))
           );
@@ -1144,12 +1147,12 @@ Error generating stack: `+o.message+`
       }
       p {
         font-family: "Mulish";
-        font-size: 32px;
+        font-size: 26px;
         line-height: 1.14;
         color: var(--color-withe);
         margin-bottom: 30px;
         @media (max-width: 1920px) {
-          font-size: calc(12px + (32 - 12) * ((100vw - 390px) / (1920 - 390)));
+          font-size: calc(12px + (26 - 12) * ((100vw - 390px) / (1920 - 390)));
         }
         @media (max-width: 767px) {
           margin-bottom: 25px;
@@ -1161,11 +1164,11 @@ Error generating stack: `+o.message+`
         column-gap: 25px;
         transition: color 0.3s;
         font-family: "Mulish";
-        font-size: 32px;
+        font-size: 26px;
         line-height: 1.14;
         color: var(--color-withe);
         @media (max-width: 1920px) {
-          font-size: calc(12px + (32 - 12) * ((100vw - 390px) / (1920 - 390)));
+          font-size: calc(12px + (26 - 12) * ((100vw - 390px) / (1920 - 390)));
           column-gap: calc(18px + (25 - 18) * ((100vw - 390px) / (1920 - 390)));
         }
         @media (min-width: 501px) {
@@ -1192,8 +1195,8 @@ Error generating stack: `+o.message+`
           transition: fill 0.3s;
         }
         @media (max-width: 1920px) {
-          width: calc(18px + (50 - 18) * ((100vw - 390px) / (1920 - 390)));
-          height: calc(20px + (40 - 20) * ((100vw - 390px) / (1920 - 390)));
+          width: calc(18px + (40 - 18) * ((100vw - 390px) / (1920 - 390)));
+          height: calc(20px + (30 - 20) * ((100vw - 390px) / (1920 - 390)));
         }
       }
     }
@@ -1612,4 +1615,4 @@ attempted value: ${a}
     }
   }
 `,P9=""+new URL("bg-feedback-ad12ba00.webp",import.meta.url).href,M9=""+new URL("bg-feedback-mobile-2d2a6147.webp",import.meta.url).href,I9=$1({name:La().required("Имя обязательно"),contact:La().required("Телефон или email обязательны"),message:La().required("Сообщение обязательно")}),R9=()=>{T.useEffect(()=>{document.title="Feedback — Jet Optic"},[]);const e=TP({initialValues:{name:"",contact:"",message:""},validationSchema:I9,onSubmit:t=>{const n=document.querySelector("form");n instanceof HTMLFormElement&&fetch("../back/mail.php",{method:"POST",body:new FormData(n)}).then(r=>r.json()).then(r=>{console.log(r)}).catch(r=>{console.error(r)})}});return w.jsxs(E9,{src:P9,children:[w.jsx(C9,{children:w.jsx("img",{loading:"lazy",src:M9,alt:"HomeBg"})}),w.jsx(Et,{children:w.jsx(T9,{children:w.jsxs(A9,{children:[w.jsx(O9,{children:"Обратная связь"}),w.jsxs("form",{onSubmit:e.handleSubmit,children:[w.jsxs(k9,{children:[w.jsxs(hu,{children:[w.jsx(mu,{type:"text",id:"name",name:"name","aria-required":"true","aria-invalid":"false",placeholder:"Имя",onChange:e.handleChange,onBlur:e.handleBlur,value:e.values.name}),e.touched.name&&e.errors.name&&w.jsx(gu,{children:e.errors.name})]}),w.jsxs(hu,{children:[w.jsx(mu,{type:"text",id:"contact",name:"contact",placeholder:"Телефон или email",onChange:e.handleChange,onBlur:e.handleBlur,value:e.values.contact}),e.touched.contact&&e.errors.contact&&w.jsx(gu,{children:e.errors.contact})]}),w.jsxs(hu,{children:[w.jsx(mu,{as:"textarea",id:"message",className:"textarea",name:"message",placeholder:"Сообщение",onChange:e.handleChange,onBlur:e.handleBlur,value:e.values.message}),e.touched.message&&e.errors.message&&w.jsx(gu,{children:e.errors.message})]})]}),w.jsxs(j9,{type:"submit",children:["Отправить",w.jsx("span",{children:w.jsx("svg",{width:"31",height:"16",viewBox:"0 0 31 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:w.jsx("path",{d:"M30.7071 8.70711C31.0976 8.31659 31.0976 7.68342 30.7071 7.2929L24.3431 0.928934C23.9526 0.53841 23.3195 0.53841 22.9289 0.928934C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM-8.74228e-08 9L30 9L30 7L8.74228e-08 7L-8.74228e-08 9Z",fill:"black"})})})]})]})]})})})]})},z9=()=>w.jsx(jb,{children:w.jsxs(Fr,{path:mt.HOME,element:w.jsx(wE,{}),children:[w.jsx(Fr,{path:mt.HOME,element:w.jsx(iT,{})}),w.jsx(Fr,{path:mt.ABOUT,element:w.jsx(pT,{})}),w.jsx(Fr,{path:mt.CONTACTS,element:w.jsx(XT,{})}),w.jsx(Fr,{path:mt.FEEDBACK,element:w.jsx(R9,{})})]})});vu.createRoot(document.getElementById("root")).render(w.jsx(w.Fragment,{children:w.jsxs(sS,{store:Jg,children:[w.jsx(D2,{}),w.jsx(zb,{children:w.jsx(z9,{})})]})}));
-//# sourceMappingURL=index-95bcc144.js.map
+//# sourceMappingURL=index-a7cc3bf0.js.map
